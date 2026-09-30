@@ -4,7 +4,20 @@
 {% else %}
     {% extends "templates/web.html" %}
     {% block page_content %}
-    <h1>{{ title }}</h1>
+    
+                <div class="col-md-12">
+                    <img src="{{ doc.front_mockup }}" alt="Front Mockup" class="img-fluid">
+                </div>
+                <div>
+                    <h1 class="h3">{{doc.get_title()}}</h1>
+                    {% set formatted_price = frappe.format_value(doc.retail_price,"Currency",currency ="INR" )%}
+                    <h2 class="text-muted fw-bold">{{formatted_price}}</h2>
+                </div>
+                <div>
+                    <h5 class="fw-bold">Product Description</h5>
+                    <p>{{doc.description}}</p>
+                </div>
+                <a href="/checkout?product={{ doc.name }}" target="_blank" class="btn btn-primary">Buy Now</a>
     {% endblock %}
 {%endif %}
 
