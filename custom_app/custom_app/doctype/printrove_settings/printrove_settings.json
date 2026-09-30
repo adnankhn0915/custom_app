@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "creation": "2026-09-26 15:03:18.374643",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "printrove_account_section",
+  "email",
+  "column_break_dkou",
+  "password",
+  "storeview_section",
+  "use_custom_template",
+  "custom_template"
+ ],
+ "fields": [
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_dkou",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "label": "Password"
+  },
+  {
+   "fieldname": "printrove_account_section",
+   "fieldtype": "Section Break",
+   "label": "Printrove Account"
+  },
+  {
+   "fieldname": "storeview_section",
+   "fieldtype": "Section Break",
+   "label": "Storeview"
+  },
+  {
+   "default": "0",
+   "fieldname": "use_custom_template",
+   "fieldtype": "Check",
+   "label": "Use Custom Template?"
+  },
+  {
+   "depends_on": "eval:doc.use_custom_template == true",
+   "fieldname": "custom_template",
+   "fieldtype": "HTML Editor",
+   "label": "Custom Template"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-09-29 16:17:05.445462",
+ "modified_by": "Administrator",
+ "module": "Custom app",
+ "name": "Printrove Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

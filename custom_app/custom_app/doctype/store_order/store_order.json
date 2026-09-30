@@ -1,0 +1,162 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-09-25 16:20:20.120640",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_details_section",
+  "product",
+  "column_break_cmmz",
+  "retail_price",
+  "customer_details_section",
+  "customer_name",
+  "email",
+  "column_break_vzcu",
+  "phone",
+  "shipping_details_section",
+  "address_line_1",
+  "pincode",
+  "city",
+  "status",
+  "column_break_ymev",
+  "address_line_2",
+  "country",
+  "state",
+  "section_break_nt8f",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_details_section",
+   "fieldtype": "Section Break",
+   "label": "Product Details"
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "label": "Product",
+   "options": "Store Product",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_cmmz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "product.retail_price",
+   "fieldname": "retail_price",
+   "fieldtype": "Currency",
+   "label": "Retail Price"
+  },
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_vzcu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shipping_details_section",
+   "fieldtype": "Section Break",
+   "label": "Shipping Details"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Address Line 1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "Pincode"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nPlaced\nDelivered"
+  },
+  {
+   "fieldname": "column_break_ymev",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Address Line 2",
+   "reqd": 1
+  },
+  {
+   "default": "India",
+   "fieldname": "country",
+   "fieldtype": "Select",
+   "label": "Country",
+   "options": "India"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "section_break_nt8f",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Store Order",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-25 16:20:20.120640",
+ "modified_by": "Administrator",
+ "module": "Custom app",
+ "name": "Store Order",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

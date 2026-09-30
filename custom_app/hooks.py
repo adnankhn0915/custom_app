@@ -153,6 +153,12 @@ app_license = "mit"
 
 # Scheduled Tasks
 # ---------------
+scheduler_events = {
+    "hourly" : [
+        "custom_app.tasks.sync_products_from_printrove"
+    ]
+}
+
 
 # scheduler_events = {
 # 	"all": [

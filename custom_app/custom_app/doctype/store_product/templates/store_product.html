@@ -1,0 +1,13 @@
+
+{% if custom_rendered_html %}
+    {{ custom_rendered_html}}
+{% else %}
+    {% extends "templates/web.html" %}
+    {% block page_content %}
+    <h1>{{ title }}</h1>
+    {% endblock %}
+{%endif %}
+
+
+
+<!-- this is a sample default web page template -->

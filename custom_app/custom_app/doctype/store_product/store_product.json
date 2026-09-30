@@ -1,0 +1,117 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2026-09-25 16:25:57.565764",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "retail_price",
+  "column_break_ahjn",
+  "is_published",
+  "route",
+  "product_details_section",
+  "front_mockup_thumbnail",
+  "front_mockup",
+  "printrove_id",
+  "column_break_rqdq",
+  "back_mockup_thumbnail",
+  "back_mockup"
+ ],
+ "fields": [
+  {
+   "fieldname": "printrove_id",
+   "fieldtype": "Data",
+   "label": "Printrove_ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "front_mockup",
+   "fieldtype": "Attach",
+   "label": "Front Mockup",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_rqdq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "retail_price",
+   "fieldtype": "Currency",
+   "label": "Retail Price"
+  },
+  {
+   "fieldname": "back_mockup",
+   "fieldtype": "Attach",
+   "label": "Back Mockup",
+   "read_only": 1
+  },
+  {
+   "fieldname": "product_details_section",
+   "fieldtype": "Section Break",
+   "label": "Printrove Product Details"
+  },
+  {
+   "fieldname": "column_break_ahjn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published"
+  },
+  {
+   "fieldname": "front_mockup_thumbnail",
+   "fieldtype": "Image",
+   "label": "Front Mockup Thumbnail",
+   "options": "front_mockup"
+  },
+  {
+   "fieldname": "back_mockup_thumbnail",
+   "fieldtype": "Image",
+   "label": "Back Mockup Thumbnail",
+   "options": "back_mockup"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  }
+ ],
+ "grid_page_length": 50,
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
+ "links": [],
+ "modified": "2026-09-29 15:55:06.106206",
+ "modified_by": "Administrator",
+ "module": "Custom app",
+ "name": "Store Product",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "Products",
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
