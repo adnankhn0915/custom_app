@@ -17,7 +17,9 @@
   "printrove_id",
   "column_break_rqdq",
   "back_mockup_thumbnail",
-  "back_mockup"
+  "back_mockup",
+  "printrove_category",
+  "printrove_category_id"
  ],
  "fields": [
   {
@@ -78,6 +80,18 @@
    "fieldname": "route",
    "fieldtype": "Data",
    "label": "Route"
+  },
+  {
+   "fieldname": "printrove_category",
+   "fieldtype": "Data",
+   "label": "Printrove Category",
+   "read_only": 1
+  },
+  {
+   "fieldname": "printrove_category_id",
+   "fieldtype": "Int",
+   "label": "Printrove Category ID",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
@@ -85,7 +99,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2026-09-29 15:55:06.106206",
+ "modified": "2026-09-30 12:57:07.845230",
  "modified_by": "Administrator",
  "module": "Custom app",
  "name": "Store Product",
